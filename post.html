@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Loading...🚀</title>
+    <title>Loading...</title>
 </head>
 <body>
 
@@ -11,7 +11,16 @@
 <script>
 function getSlug() {
     const params = new URLSearchParams(window.location.search);
-    return params.get("name");
+    let slug = params.get("name");
+
+    if (!slug) return null;
+
+    // Agar .html hai to hata do
+    if (slug.endsWith(".html")) {
+        slug = slug.replace(".html", "");
+    }
+
+    return slug;
 }
 
 const slug = getSlug();
@@ -19,7 +28,7 @@ const slug = getSlug();
 fetch("data.json")
 .then(res => res.json())
 .then(data => {
-    if(data[slug]) {
+    if(slug && data[slug]) {
         document.title = data[slug].title;
         document.getElementById("content").innerHTML = data[slug].content;
     } else {
