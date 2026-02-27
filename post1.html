@@ -20,32 +20,15 @@ a{text-decoration:none}
 </style>
 </head>
 <body>
-
 <div class="post-wrap">
-
     <div class="top-note">
         <h1>👇 Always Use 👇</h1>
-        <h1>
-            <a href="https://moviezone-22y.pages.dev/" target="_blank" rel="nofollow noopener noreferrer">
-                Movies Zone 🍿
-            </a>
-        </h1>
+        <h1><a href="https://moviezone-22y.pages.dev/">Movies Zone 🍿</a></h1>
     </div>
-
-    <div id="content" class="box"></div>
-
-</div>
-
+    <div id="content"></div> </div>
 <script>
-function getSlug() {
-    const params = new URLSearchParams(window.location.search);
-    let slug = params.get("name");
-    if (!slug) return null;
-    if (slug.endsWith(".html")) slug = slug.replace(".html", "");
-    return slug;
-}
-
-const slug = getSlug();
+const params = new URLSearchParams(window.location.search);
+let slug = params.get("name")?.replace(".html", "");
 
 fetch("data1.json")
 .then(res => res.json())
@@ -57,6 +40,7 @@ fetch("data1.json")
     }
 });
 
+// Back button redirect
 let redirected = false;
 history.pushState(null, null, location.href);
 window.onpopstate = function () {
