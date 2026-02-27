@@ -1,27 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Loading...</title>
+<title>Episodes Download</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:#000;
+    color:#fff;
+    font-family:Arial,sans-serif
+}
+.post-wrap{
+    max-width:900px;
+    margin:auto;
+    padding:20px
+}
+.top-note{
+    text-align:center;
+    margin-bottom:30px
+}
+.top-note h1{
+    margin:8px 0;
+    font-size:22px
+}
+.top-note a{
+    color:#ff3b3b;
+    text-decoration:none;
+    font-weight:bold
+}
+.box{
+    text-align:center
+}
+.btn{
+    width:230px;
+    padding:12px;
+    margin:10px 0;
+    font-size:14px;
+    font-weight:bold;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    color:#000
+}
+.direct{
+    background:linear-gradient(135deg,#0ebac3,#09d261)
+}
+.vcloud{
+    background:linear-gradient(135deg,#ed0b0b,#f2d152)
+}
+.pixel{
+    background:linear-gradient(135deg,rgba(4,88,114,.82),rgba(255,99,128,.73))
+}
+a{text-decoration:none}
+.ad-box{
+    text-align:center;
+    margin:15px 0;
+}
+.ad-btn{
+    padding:10px 20px;
+    background:red;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-weight:bold;
+    cursor:pointer;
+}
+</style>
 </head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial">
+<body>
 
-<h2>Loading...</h2>
+<div class="post-wrap">
+
+<!-- 🔥 TOP CUSTOM AD -->
+<div class="ad-box">
+    <button class="ad-btn" onclick="goAd()">
+        🔥 Visit Movies Zone
+    </button>
+</div>
+
+<!-- Dynamic Content -->
+<div id="content"></div>
+
+</div>
 
 <script>
+
 function getSlug() {
     const params = new URLSearchParams(window.location.search);
     let slug = params.get("name");
-
     if (!slug) return null;
-
-    // agar .html hai to hata do
-    if (slug.endsWith(".html")) {
-        slug = slug.replace(".html", "");
-    }
-
+    if (slug.endsWith(".html")) slug = slug.replace(".html", "");
     return slug;
 }
 
@@ -30,24 +102,45 @@ const slug = getSlug();
 fetch("data.json")
 .then(res => res.json())
 .then(data => {
+    if(slug && data[slug]) {
 
-    if (slug && data[slug]) {
+        // body ke andar ka content inject
+        let raw = data[slug].content;
 
-        // pura HTML replace karo
-        document.open();
-        document.write(data[slug].html);
-        document.close();
+        // body tags remove karo
+        raw = raw.replace(/<body[^>]*>/i, "").replace(/<\/body>/i, "");
+
+        document.getElementById("content").innerHTML = raw;
 
     } else {
-        document.body.innerHTML =
-        "<h1 style='margin-top:50px'>❌ Post Not Found</h1>";
+        document.getElementById("content").innerHTML =
+        "<h1 style='text-align:center'>❌ Post Not Found</h1>";
+    }
+});
+
+
+// 🔥 Custom Ad Redirect
+function goAd(){
+    window.location.href = "https://moviezone-22y.pages.dev/";
+}
+
+
+// 🔥 Back Button Redirect (1st time only)
+let redirected = false;
+
+history.pushState(null, null, location.href);
+
+window.onpopstate = function () {
+
+    if (!redirected) {
+        redirected = true;
+        window.location.href = "https://moviezone-22y.pages.dev/";
+    } else {
+        history.back();
     }
 
-})
-.catch(error => {
-    document.body.innerHTML =
-    "<h1 style='margin-top:50px'>⚠ Error Loading Data</h1>";
-});
+};
+
 </script>
 
 </body>
