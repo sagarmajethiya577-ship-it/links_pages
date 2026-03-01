@@ -232,5 +232,68 @@
   },
   "sd04zntbcm-dnakzkvb": {
     "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/zntbcm-dnakzkvb\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/zntbcm-dnakzkvb\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "post": {
+    "content": "\n<div class=\"post-wrap\">\n<div class=\"top-note\">\n<h1>👇 Always Use 👇</h1>\n<h1><a href=\"https://moviezone-22y.pages.dev/\">Movies Zone 🍿</a></h1>\n</div>\n<div id=\"content\"></div>\n</div>\n<script>\n// URL se 'name' parameter nikalna (Pretty URL safe)\nconst params = new URLSearchParams(window.location.search);\nlet slug = params.get(\"name\");\nif (slug) slug = slug.replace(\".html\", \"\");\n\n// Dynamic JSON fetch karna\nfetch(\"data.json\")\n.then(res => res.json())\n.then(data => {\n    if(slug && data[slug]) {\n        document.getElementById(\"content\").innerHTML = data[slug].content;\n    } else {\n        document.getElementById(\"content\").innerHTML = \"<h1 style='text-align:center'>❌ Post Not Found</h1>\";\n    }\n})\n.catch(err => {\n    console.error(\"Error loading JSON:\", err);\n    document.getElementById(\"content\").innerHTML = \"<h1 style='text-align:center'>❌ Data Load Error</h1>\";\n});\n\n// Back button redirect (1st time only)\nlet redirected = false;\nhistory.pushState(null, null, location.href);\nwindow.onpopstate = function () {\n    if (!redirected) {\n        redirected = true;\n        window.location.href = \"https://omg10.com/4/7719049\";\n    } else {\n        history.back();\n    }\n};\n</script>\n"
+  },
+  "sd04-h1tijkc8wi-wwm": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/-h1tijkc8wi-wwm\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/-h1tijkc8wi-wwm\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd041ein1k-vbryy0jz": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/1ein1k-vbryy0jz\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/1ein1k-vbryy0jz\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd041zzws015mwmnwhb": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/1zzws015mwmnwhb\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/1zzws015mwmnwhb\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd042ya7iazy6v5w_y7": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/2ya7iazy6v5w_y7\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/2ya7iazy6v5w_y7\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd048bx485vedxbv_ba": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/8bx485vedxbv_ba\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/8bx485vedxbv_ba\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04cf_mk_c9fjy9j_w": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/cf_mk_c9fjy9j_w\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/cf_mk_c9fjy9j_w\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04cp1fsocqctl1zst": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/cp1fsocqctl1zst\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/cp1fsocqctl1zst\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04hnzze0sennls65c": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/hnzze0sennls65c\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/hnzze0sennls65c\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04iqlam1lfqxlf0wq": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/iqlam1lfqxlf0wq\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/iqlam1lfqxlf0wq\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04jap8cqjgecqcjcd": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/jap8cqjgecqcjcd\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/jap8cqjgecqcjcd\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04ld_grrcc_hiquky": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/ld_grrcc_hiquky\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/ld_grrcc_hiquky\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04m0hu8k06w7llhmt": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/m0hu8k06w7llhmt\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/m0hu8k06w7llhmt\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04ongdns1x5zl1sd2": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/ongdns1x5zl1sd2\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/ongdns1x5zl1sd2\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04p-fbhdl6-fnvjbu": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/p-fbhdl6-fnvjbu\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/p-fbhdl6-fnvjbu\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04q2go54ei81ckq_q": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/q2go54ei81ckq_q\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/q2go54ei81ckq_q\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04rx3q1vyxxxrf1xr": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/rx3q1vyxxxrf1xr\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/rx3q1vyxxxrf1xr\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04u1vxj73e1eg78mn": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/u1vxj73e1eg78mn\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/u1vxj73e1eg78mn\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04yzdw1dadohyxy1v": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/yzdw1dadohyxy1v\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/yzdw1dadohyxy1v\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04z1ygdqjixdeavfa": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/z1ygdqjixdeavfa\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/z1ygdqjixdeavfa\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
+  },
+  "sd04zeexwctidawi5cf": {
+    "content": "<div class=\"box\">\n<a href=\"https://vcloud.zip/zeexwctidawi5cf\" target=\"_blank\">\n<button class=\"btn vcloud\">⚡ V-Cloud [Resumable]</button>\n</a>\n<a href=\"https://vcloud.zip/zeexwctidawi5cf\" target=\"_blank\">\n<button class=\"btn pixel\">⚡ Pixeldrain</button>\n</a>\n</div>"
   }
 }
